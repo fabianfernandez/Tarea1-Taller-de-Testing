@@ -9,6 +9,9 @@ def main():
     print("Hola, ingresa la cadena de caracteres: ", end ="")
     cadena = input()
     log("Entrada: "+cadena)
+    if cadena == "":
+        log("Entrada invalida, valor no permitido")
+        return 0
     numeroDeCaracteresRepetidos = 0
     cadenaComprimida = ""
     caracterAnalizado = cadena[0]
