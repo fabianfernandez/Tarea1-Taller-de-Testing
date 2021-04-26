@@ -6,11 +6,17 @@ def log(mensaje):
     return
 
 def main():
-    print("Hola, ingresa la cadena de caracteres: ", end ="")
+    print("Hola, ingresa una cadena 30 caracteres como maximo: ", end ="")
     cadena = input()
     log("Entrada: "+cadena)
     if cadena == "":
-        log("Entrada invalida, valor no permitido")
+        log("Error, cadena ingresada invalida")
+        return 0
+    if (any(char.isdigit() for char in cadena)):
+        log("Error, cadena ingresada invalida")
+        return 0
+    if len(cadena) > 150:
+        log("Error, cadena ingresada muy larga")
         return 0
     numeroDeCaracteresRepetidos = 0
     cadenaComprimida = ""
