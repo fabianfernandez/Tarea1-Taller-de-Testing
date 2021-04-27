@@ -6,7 +6,7 @@ def log(mensaje):
     return
 
 def main():
-    print("Hola, ingresa una cadena 30 caracteres como maximo: ", end ="")
+    print("Hola, ingresa una cadena de 150 caracteres como maximo: ", end ="")
     cadena = input()
     log("Entrada: "+cadena)
     if cadena == "":

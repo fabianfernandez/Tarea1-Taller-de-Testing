@@ -1,8 +1,15 @@
-Instrucciones:
+# Compresión de cadenas
 
-instalacion: solo utiliza la librería time que viene por defecto instalada con python3
+## Descripción
+Este programa recibe una cadena de texto y la comprime con un formato en especifico. Ejemplo, si el programa recibe `"aabcccccaaa"`, retorna `"a2b1c5a3"`. En caso de que el largo de la cadena comprimida sea mayor al de la cadena recibida, se retorna la cadena original.
 
-instrucciones de Uso:
-- Ejecutar en la terminal "python3 Tarea1.py" o utilizar algun IDE para ejecutar el .py
+##Tecnología:
+
+- Python 3.8.5
+
+
+##Instrucciones de uso
+
+- Ejecutar en la terminal: "python3 Tarea1.py" o utilizar algún IDE para ejecutar el .py
 - Ingresar cadena a analizar
 - Observar resultados en la terminal
